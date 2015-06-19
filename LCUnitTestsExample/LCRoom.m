@@ -10,6 +10,14 @@
 
 @implementation LCRoom
 
+- (instancetype)init
+{
+    if(self = [super init]){
+        _isLight = NO;
+    }
+    return self;
+}
+
 - (instancetype)initWithLight:(BOOL)isLight
 {
     if(self = [super init]){
