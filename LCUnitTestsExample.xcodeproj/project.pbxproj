@@ -13,7 +13,9 @@
 		8A50AAB11B33E8F400184D95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A50AAAF1B33E8F400184D95 /* Main.storyboard */; };
 		8A50AAB31B33E8F400184D95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A50AAB21B33E8F400184D95 /* Images.xcassets */; };
 		8A50AAB61B33E8F400184D95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A50AAB41B33E8F400184D95 /* LaunchScreen.xib */; };
-		8A50AAC21B33E8F400184D95 /* LCUnitTestsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50AAC11B33E8F400184D95 /* LCUnitTestsExampleTests.m */; };
+		8A50AAC21B33E8F400184D95 /* LCCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50AAC11B33E8F400184D95 /* LCCalculatorTests.m */; };
+		8A50AACD1B33EA6800184D95 /* LCCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50AACC1B33EA6800184D95 /* LCCalculator.m */; };
+		8A50AACF1B33EA9D00184D95 /* LCCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50AACC1B33EA6800184D95 /* LCCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,9 @@
 		8A50AAB51B33E8F400184D95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8A50AABB1B33E8F400184D95 /* LCUnitTestsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCUnitTestsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A50AAC01B33E8F400184D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A50AAC11B33E8F400184D95 /* LCUnitTestsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCUnitTestsExampleTests.m; sourceTree = "<group>"; };
+		8A50AAC11B33E8F400184D95 /* LCCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCCalculatorTests.m; sourceTree = "<group>"; };
+		8A50AACB1B33EA6800184D95 /* LCCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCalculator.h; sourceTree = "<group>"; };
+		8A50AACC1B33EA6800184D95 /* LCCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				8A50AAB21B33E8F400184D95 /* Images.xcassets */,
 				8A50AAB41B33E8F400184D95 /* LaunchScreen.xib */,
 				8A50AAA51B33E8F400184D95 /* Supporting Files */,
+				8A50AACE1B33EA6D00184D95 /* Model */,
 			);
 			path = LCUnitTestsExample;
 			sourceTree = "<group>";
@@ -105,7 +110,7 @@
 		8A50AABE1B33E8F400184D95 /* LCUnitTestsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				8A50AAC11B33E8F400184D95 /* LCUnitTestsExampleTests.m */,
+				8A50AAC11B33E8F400184D95 /* LCCalculatorTests.m */,
 				8A50AABF1B33E8F400184D95 /* Supporting Files */,
 			);
 			path = LCUnitTestsExampleTests;
@@ -117,6 +122,15 @@
 				8A50AAC01B33E8F400184D95 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A50AACE1B33EA6D00184D95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A50AACB1B33EA6800184D95 /* LCCalculator.h */,
+				8A50AACC1B33EA6800184D95 /* LCCalculator.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +185,6 @@
 					};
 					8A50AABA1B33E8F400184D95 = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 8A50AAA11B33E8F400184D95;
 					};
 				};
 			};
@@ -221,6 +234,7 @@
 			files = (
 				8A50AAAE1B33E8F400184D95 /* ViewController.m in Sources */,
 				8A50AAAB1B33E8F400184D95 /* AppDelegate.m in Sources */,
+				8A50AACD1B33EA6800184D95 /* LCCalculator.m in Sources */,
 				8A50AAA81B33E8F400184D95 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A50AAC21B33E8F400184D95 /* LCUnitTestsExampleTests.m in Sources */,
+				8A50AACF1B33EA9D00184D95 /* LCCalculator.m in Sources */,
+				8A50AAC21B33E8F400184D95 /* LCCalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +383,6 @@
 		8A50AAC91B33E8F400184D95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -380,14 +394,12 @@
 				INFOPLIST_FILE = LCUnitTestsExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCUnitTestsExample.app/LCUnitTestsExample";
 			};
 			name = Debug;
 		};
 		8A50AACA1B33E8F400184D95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -395,7 +407,6 @@
 				INFOPLIST_FILE = LCUnitTestsExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCUnitTestsExample.app/LCUnitTestsExample";
 			};
 			name = Release;
 		};
@@ -418,6 +429,7 @@
 				8A50AAC71B33E8F400184D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A50AAC81B33E8F400184D95 /* Build configuration list for PBXNativeTarget "LCUnitTestsExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +438,7 @@
 				8A50AACA1B33E8F400184D95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
