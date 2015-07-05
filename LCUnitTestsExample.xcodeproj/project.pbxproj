@@ -19,6 +19,8 @@
 		8A57D6B01B33EE270003BB06 /* LCRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A57D6AF1B33EE270003BB06 /* LCRoom.m */; };
 		8A57D6B21B33EE380003BB06 /* LCRoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A57D6B11B33EE380003BB06 /* LCRoomTests.m */; };
 		8A57D6B31B33EE450003BB06 /* LCRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A57D6AF1B33EE270003BB06 /* LCRoom.m */; };
+		8A7B2DF41B4942AC000C3FC2 /* LCTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF31B4942AC000C3FC2 /* LCTableViewTests.m */; };
+		8A7B2DF71B4952DA000C3FC2 /* DummyUITableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF61B4952DA000C3FC2 /* DummyUITableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		8A57D6AE1B33EE270003BB06 /* LCRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRoom.h; sourceTree = "<group>"; };
 		8A57D6AF1B33EE270003BB06 /* LCRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRoom.m; sourceTree = "<group>"; };
 		8A57D6B11B33EE380003BB06 /* LCRoomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRoomTests.m; sourceTree = "<group>"; };
+		8A7B2DF31B4942AC000C3FC2 /* LCTableViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewTests.m; sourceTree = "<group>"; };
+		8A7B2DF51B4952DA000C3FC2 /* DummyUITableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyUITableViewDataSource.h; sourceTree = "<group>"; };
+		8A7B2DF61B4952DA000C3FC2 /* DummyUITableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyUITableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 			children = (
 				8A50AAC11B33E8F400184D95 /* LCCalculatorTests.m */,
 				8A57D6B11B33EE380003BB06 /* LCRoomTests.m */,
+				8A7B2DF31B4942AC000C3FC2 /* LCTableViewTests.m */,
+				8A7B2DF51B4952DA000C3FC2 /* DummyUITableViewDataSource.h */,
+				8A7B2DF61B4952DA000C3FC2 /* DummyUITableViewDataSource.m */,
 				8A50AABF1B33E8F400184D95 /* Supporting Files */,
 			);
 			path = LCUnitTestsExampleTests;
@@ -256,7 +264,9 @@
 				8A50AACF1B33EA9D00184D95 /* LCCalculator.m in Sources */,
 				8A57D6B21B33EE380003BB06 /* LCRoomTests.m in Sources */,
 				8A50AAC21B33E8F400184D95 /* LCCalculatorTests.m in Sources */,
+				8A7B2DF41B4942AC000C3FC2 /* LCTableViewTests.m in Sources */,
 				8A57D6B31B33EE450003BB06 /* LCRoom.m in Sources */,
+				8A7B2DF71B4952DA000C3FC2 /* DummyUITableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,14 +14,12 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)test:(id)sender
+{
+    double salaryPerHours = 103;
+    double overtimeSalaryPerHours = salaryPerHours * 1.66;
+    double liyaoSalary = (salaryPerHours * 8) + (overtimeSalaryPerHours * 2);
+    NSLog(@"%f", liyaoSalary);
 }
 
 @end
