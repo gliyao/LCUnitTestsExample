@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LCCalculator.h"
 
 @interface ViewController ()
 
@@ -16,10 +17,18 @@
 
 - (IBAction)test:(id)sender
 {
-    double salaryPerHours = 103;
-    double overtimeSalaryPerHours = salaryPerHours * 1.66;
-    double liyaoSalary = (salaryPerHours * 8) + (overtimeSalaryPerHours * 2);
-    NSLog(@"%f", liyaoSalary);
+    LCCalculator *calculator = [[LCCalculator alloc] init];
+    NSNumber *a = @10;
+    NSNumber *b = @5;
+    NSNumber *result = [calculator sumWithA:a andB:b];
+    NSLog(@"%@", result);
+    
+    if([result isEqualToNumber:@15]){
+        
+    }
+    else{
+        
+    }
 }
 
 @end
