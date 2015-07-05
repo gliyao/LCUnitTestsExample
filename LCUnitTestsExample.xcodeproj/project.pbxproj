@@ -21,6 +21,9 @@
 		8A57D6B31B33EE450003BB06 /* LCRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A57D6AF1B33EE270003BB06 /* LCRoom.m */; };
 		8A7B2DF41B4942AC000C3FC2 /* LCTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF31B4942AC000C3FC2 /* LCTableViewTests.m */; };
 		8A7B2DF71B4952DA000C3FC2 /* DummyUITableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF61B4952DA000C3FC2 /* DummyUITableViewDataSource.m */; };
+		8A7B2DFA1B4958CA000C3FC2 /* LCHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */; };
+		8A7B2DFC1B495929000C3FC2 /* LCHouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DFB1B495929000C3FC2 /* LCHouseTests.m */; };
+		8A7B2DFD1B495AB9000C3FC2 /* LCHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		8A7B2DF31B4942AC000C3FC2 /* LCTableViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTableViewTests.m; sourceTree = "<group>"; };
 		8A7B2DF51B4952DA000C3FC2 /* DummyUITableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyUITableViewDataSource.h; sourceTree = "<group>"; };
 		8A7B2DF61B4952DA000C3FC2 /* DummyUITableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyUITableViewDataSource.m; sourceTree = "<group>"; };
+		8A7B2DF81B4958CA000C3FC2 /* LCHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHouse.h; sourceTree = "<group>"; };
+		8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHouse.m; sourceTree = "<group>"; };
+		8A7B2DFB1B495929000C3FC2 /* LCHouseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHouseTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +129,9 @@
 			children = (
 				8A50AAC11B33E8F400184D95 /* LCCalculatorTests.m */,
 				8A57D6B11B33EE380003BB06 /* LCRoomTests.m */,
-				8A7B2DF31B4942AC000C3FC2 /* LCTableViewTests.m */,
+				8A7B2DFB1B495929000C3FC2 /* LCHouseTests.m */,
 				8A7B2DF51B4952DA000C3FC2 /* DummyUITableViewDataSource.h */,
+				8A7B2DF31B4942AC000C3FC2 /* LCTableViewTests.m */,
 				8A7B2DF61B4952DA000C3FC2 /* DummyUITableViewDataSource.m */,
 				8A50AABF1B33E8F400184D95 /* Supporting Files */,
 			);
@@ -146,6 +153,8 @@
 				8A50AACC1B33EA6800184D95 /* LCCalculator.m */,
 				8A57D6AE1B33EE270003BB06 /* LCRoom.h */,
 				8A57D6AF1B33EE270003BB06 /* LCRoom.m */,
+				8A7B2DF81B4958CA000C3FC2 /* LCHouse.h */,
+				8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A50AAAE1B33E8F400184D95 /* ViewController.m in Sources */,
+				8A7B2DFA1B4958CA000C3FC2 /* LCHouse.m in Sources */,
 				8A50AAAB1B33E8F400184D95 /* AppDelegate.m in Sources */,
 				8A50AACD1B33EA6800184D95 /* LCCalculator.m in Sources */,
 				8A50AAA81B33E8F400184D95 /* main.m in Sources */,
@@ -261,12 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7B2DFC1B495929000C3FC2 /* LCHouseTests.m in Sources */,
 				8A50AACF1B33EA9D00184D95 /* LCCalculator.m in Sources */,
 				8A57D6B21B33EE380003BB06 /* LCRoomTests.m in Sources */,
 				8A50AAC21B33E8F400184D95 /* LCCalculatorTests.m in Sources */,
 				8A7B2DF41B4942AC000C3FC2 /* LCTableViewTests.m in Sources */,
 				8A57D6B31B33EE450003BB06 /* LCRoom.m in Sources */,
 				8A7B2DF71B4952DA000C3FC2 /* DummyUITableViewDataSource.m in Sources */,
+				8A7B2DFD1B495AB9000C3FC2 /* LCHouse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
