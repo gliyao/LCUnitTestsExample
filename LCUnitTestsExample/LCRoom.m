@@ -26,7 +26,7 @@
     return self;
 }
 
-- (void)openLight
+- (void)turnOnLight
 {
     if(_isLight){
         return;
@@ -34,7 +34,7 @@
     _isLight = YES;
 }
 
-- (void)closeLight
+- (void)turnOffLight
 {
     if(!_isLight){
         return;

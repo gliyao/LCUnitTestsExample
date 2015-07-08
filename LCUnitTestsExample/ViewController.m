@@ -7,28 +7,35 @@
 //
 
 #import "ViewController.h"
-#import "LCCalculator.h"
+#import "LCRoom.h"
+
 
 @interface ViewController ()
-
+@property (strong, nonatomic) LCRoom *room;
 @end
 
 @implementation ViewController
 
-- (IBAction)test:(id)sender
+- (void)loadView
 {
-    LCCalculator *calculator = [[LCCalculator alloc] init];
-    NSNumber *a = @10;
-    NSNumber *b = @5;
-    NSNumber *result = [calculator sumWithA:a andB:b];
-    NSLog(@"%@", result);
-    
-    if([result isEqualToNumber:@15]){
+    [super loadView];
+    self.room = [[LCRoom alloc] initWithLight:YES];
+}
+
+- (IBAction)turnOn:(id)sender
+{
+    [self.room turnOnLight];
+    if(self.room.isLight){
         
     }
     else{
         
     }
+}
+
+- (IBAction)turnOff:(id)sender
+{
+    // TODO:
 }
 
 @end

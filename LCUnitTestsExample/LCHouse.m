@@ -28,7 +28,7 @@
     if ([self.roooms count] > 0) {
         
         [self.roooms enumerateObjectsUsingBlock:^(LCRoom *room, NSUInteger idx, BOOL *stop) {
-            [room closeLight];
+            [room turnOffLight];
         }];
     }
 }

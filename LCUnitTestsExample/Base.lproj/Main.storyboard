@@ -13,31 +13,49 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNe-kf-WIX">
-                                <rect key="frame" x="200.5" y="285" width="200" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="PJU-9L-OYh"/>
-                                </constraints>
-                                <state key="normal" title="Test">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-AZ-Nkr">
+                                <rect key="frame" x="204" y="350" width="100" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="打開">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gta-7w-Qh1"/>
-                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="IXb-XY-lF9">
+                                <rect key="frame" x="88" y="70" width="145" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="8BR-yo-DHA"/>
+                                    <constraint firstAttribute="width" constant="145" id="Omz-TJ-veI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-XZ-ces">
+                                <rect key="frame" x="16" y="350" width="100" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="關閉">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="pNe-kf-WIX" secondAttribute="centerX" id="ji1-wJ-Dgt"/>
-                            <constraint firstAttribute="centerY" secondItem="pNe-kf-WIX" secondAttribute="centerY" id="sFd-V4-evu"/>
+                            <constraint firstItem="iH4-XZ-ces" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="ADm-7X-0DK"/>
+                            <constraint firstItem="JI2-AZ-Nkr" firstAttribute="leading" secondItem="iH4-XZ-ces" secondAttribute="trailing" constant="88" id="C8S-C4-gzy"/>
+                            <constraint firstItem="IXb-XY-lF9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ItZ-f5-FaO"/>
+                            <constraint firstItem="JI2-AZ-Nkr" firstAttribute="top" secondItem="IXb-XY-lF9" secondAttribute="bottom" constant="120" id="QKE-uQ-aie"/>
+                            <constraint firstItem="IXb-XY-lF9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="88" id="ikC-OM-efB"/>
+                            <constraint firstItem="iH4-XZ-ces" firstAttribute="top" secondItem="IXb-XY-lF9" secondAttribute="bottom" constant="120" id="mX7-Hr-xkw"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="light" width="145" height="160"/>
+    </resources>
 </document>

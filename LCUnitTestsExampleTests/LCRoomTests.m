@@ -39,7 +39,7 @@
     LCRoom *room = [[LCRoom alloc] initWithLight:NO];
     
     //Act - 按下電燈開關
-    [room openLight];
+    [room turnOnLight];
     
     //Assert - 電燈打開 (開燈的房間)
     XCTAssertTrue(room.isLight);
@@ -51,7 +51,7 @@
     LCRoom *room = [[LCRoom alloc] initWithLight:YES];
     
     //Act
-    [room openLight];
+    [room turnOnLight];
     
     //Assert
     XCTAssertTrue(room.isLight);
@@ -62,7 +62,7 @@
 {
     LCRoom *room = [[LCRoom alloc] initWithLight:NO];
     
-    [room closeLight];
+    [room turnOffLight];
     
     XCTAssertFalse(room.isLight);
 }
@@ -71,7 +71,7 @@
 {
     LCRoom *room = [[LCRoom alloc] initWithLight:YES];
     
-    [room closeLight];
+    [room turnOffLight];
     
     XCTAssertFalse(room.isLight);
 }
