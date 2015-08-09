@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface LCWire : NSObject
+#import "Expirable.h"
+@interface LCWire : NSObject <Expirable>
 - (BOOL)isExpired;
 @end

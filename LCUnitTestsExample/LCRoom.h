@@ -11,7 +11,7 @@
 
 @interface LCRoom : NSObject
 @property (assign, nonatomic, readonly) BOOL isLight;
-- (instancetype)initWithLight:(BOOL)isLight wire:(LCWire *)wire;
+- (instancetype)initWithLight:(BOOL)isLight wire:(id<Expirable>)wire;
 - (void)turnOnLight;
 - (void)turnOffLight;
 @end

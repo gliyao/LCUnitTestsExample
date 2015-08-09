@@ -10,25 +10,45 @@
 #import <XCTest/XCTest.h>
 
 #import "LCRoom.h"
+#import "Expirable.h"
 
-@interface LCRoomTests : XCTestCase
-
+// 永遠不會過期的電線
+@interface LCNeverExpiredWire : NSObject <Expirable>
+@end
+@implementation LCNeverExpiredWire
+- (BOOL)isExpired {
+    return NO;
+}
 @end
 
+
+@interface LCRoomTests : XCTestCase
+@property (strong, nonatomic) id<Expirable> wire;
+@end
 @implementation LCRoomTests
+
+- (void)setUp
+{
+    [super setUp];
+    self.wire = [[LCNeverExpiredWire alloc] init];
+}
+
+- (void)tearDown
+{
+    self.wire = nil;
+    [super tearDown];
+}
 
 #pragma mark - init
 - (void)testLightOnInit
 {
-    LCWire *wire = [[LCWire alloc] init];
-    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:wire];
+    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:self.wire];
     XCTAssertTrue(room.isLight);
 }
 
 - (void)testLightOffInit
 {
-    LCWire *wire = [[LCWire alloc] init];
-    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:wire];
+    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:self.wire];
 
     XCTAssertFalse(room.isLight);
 }
@@ -39,8 +59,7 @@
 - (void)testOpenLightWhenLightOff
 {
     //Arrange - 關燈的房間
-    LCWire *wire = [[LCWire alloc] init];
-    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:wire];
+    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:self.wire];
 
     //Act - 按下電燈開關
     [room turnOnLight];
@@ -52,8 +71,7 @@
 - (void)testOpenLightWhenLightOn
 {
     //Arrange
-    LCWire *wire = [[LCWire alloc] init];
-    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:wire];
+    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:self.wire];
     
     //Act
     [room turnOnLight];
@@ -65,8 +83,7 @@
 #pragma mark - closeLight
 - (void)testCloseLightWhenLightOff
 {
-    LCWire *wire = [[LCWire alloc] init];
-    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:wire];
+    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:self.wire];
     
     [room turnOffLight];
     
@@ -75,8 +92,7 @@
 
 - (void)testCloseLightWhenLightOn
 {
-    LCWire *wire = [[LCWire alloc] init];
-    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:wire];
+    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:self.wire];
     
     [room turnOffLight];
     

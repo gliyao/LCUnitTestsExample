@@ -10,12 +10,12 @@
 
 
 @interface LCRoom()
-@property (strong, nonatomic) LCWire *wire;
+@property (strong, nonatomic) id<Expirable> wire;
 @end
 
 @implementation LCRoom
 
-- (instancetype)initWithLight:(BOOL)isLight wire:(LCWire *)wire
+- (instancetype)initWithLight:(BOOL)isLight wire:(id<Expirable>)wire
 {
     if(self = [super init]){
         _wire = wire;
