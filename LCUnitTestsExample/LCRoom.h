@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LCWire.h"
 
 @interface LCRoom : NSObject
 @property (assign, nonatomic, readonly) BOOL isLight;
-- (instancetype)initWithLight:(BOOL)isLight;
+- (instancetype)initWithLight:(BOOL)isLight wire:(LCWire *)wire;
 - (void)turnOnLight;
 - (void)turnOffLight;
 @end

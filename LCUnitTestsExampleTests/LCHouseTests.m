@@ -11,6 +11,7 @@
 
 #import "LCRoom.h"
 #import "LCHouse.h"
+#import "LCWire.h"
 
 @interface LCHouseTests : XCTestCase
 @end
@@ -21,8 +22,9 @@
 - (void)testTurnOffHouseLight
 {
     //Arrange
-    LCRoom *roomA = [[LCRoom alloc] initWithLight:YES];
-    LCRoom *roomB = [[LCRoom alloc] initWithLight:YES];
+    LCWire *wire = [[LCWire alloc] init];
+    LCRoom *roomA = [[LCRoom alloc] initWithLight:YES wire:wire];
+    LCRoom *roomB = [[LCRoom alloc] initWithLight:YES wire:wire];
     LCHouse *house = [[LCHouse alloc] initWithRooms:@[roomA, roomB]];
     
     //Act

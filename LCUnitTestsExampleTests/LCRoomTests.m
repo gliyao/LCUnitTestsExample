@@ -20,13 +20,16 @@
 #pragma mark - init
 - (void)testLightOnInit
 {
-    LCRoom *room = [[LCRoom alloc] initWithLight:YES];
+    LCWire *wire = [[LCWire alloc] init];
+    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:wire];
     XCTAssertTrue(room.isLight);
 }
 
 - (void)testLightOffInit
 {
-    LCRoom *room = [[LCRoom alloc] initWithLight:NO];
+    LCWire *wire = [[LCWire alloc] init];
+    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:wire];
+
     XCTAssertFalse(room.isLight);
 }
 
@@ -36,8 +39,9 @@
 - (void)testOpenLightWhenLightOff
 {
     //Arrange - 關燈的房間
-    LCRoom *room = [[LCRoom alloc] initWithLight:NO];
-    
+    LCWire *wire = [[LCWire alloc] init];
+    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:wire];
+
     //Act - 按下電燈開關
     [room turnOnLight];
     
@@ -48,7 +52,8 @@
 - (void)testOpenLightWhenLightOn
 {
     //Arrange
-    LCRoom *room = [[LCRoom alloc] initWithLight:YES];
+    LCWire *wire = [[LCWire alloc] init];
+    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:wire];
     
     //Act
     [room turnOnLight];
@@ -60,7 +65,8 @@
 #pragma mark - closeLight
 - (void)testCloseLightWhenLightOff
 {
-    LCRoom *room = [[LCRoom alloc] initWithLight:NO];
+    LCWire *wire = [[LCWire alloc] init];
+    LCRoom *room = [[LCRoom alloc] initWithLight:NO wire:wire];
     
     [room turnOffLight];
     
@@ -69,7 +75,8 @@
 
 - (void)testCloseLightWhenLightOn
 {
-    LCRoom *room = [[LCRoom alloc] initWithLight:YES];
+    LCWire *wire = [[LCWire alloc] init];
+    LCRoom *room = [[LCRoom alloc] initWithLight:YES wire:wire];
     
     [room turnOffLight];
     

@@ -24,6 +24,11 @@
 		8A7B2DFA1B4958CA000C3FC2 /* LCHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */; };
 		8A7B2DFC1B495929000C3FC2 /* LCHouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DFB1B495929000C3FC2 /* LCHouseTests.m */; };
 		8A7B2DFD1B495AB9000C3FC2 /* LCHouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */; };
+		8A7CB7571B77501900BFBC28 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7CB74C1B77501900BFBC28 /* libOCMock.a */; };
+		8A7CB7581B77502900BFBC28 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7CB74C1B77501900BFBC28 /* libOCMock.a */; };
+		8A7CB75B1B77512B00BFBC28 /* LCWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CB75A1B77512B00BFBC28 /* LCWire.m */; };
+		8A7CB75D1B7756DF00BFBC28 /* LCWireTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CB75C1B7756DF00BFBC28 /* LCWireTests.m */; };
+		8A7CB75F1B77573C00BFBC28 /* LCWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7CB75A1B77512B00BFBC28 /* LCWire.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,20 @@
 		8A7B2DF81B4958CA000C3FC2 /* LCHouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHouse.h; sourceTree = "<group>"; };
 		8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHouse.m; sourceTree = "<group>"; };
 		8A7B2DFB1B495929000C3FC2 /* LCHouseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHouseTests.m; sourceTree = "<group>"; };
+		8A7CB74C1B77501900BFBC28 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		8A7CB74E1B77501900BFBC28 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		8A7CB74F1B77501900BFBC28 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		8A7CB7501B77501900BFBC28 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		8A7CB7511B77501900BFBC28 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		8A7CB7521B77501900BFBC28 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		8A7CB7531B77501900BFBC28 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		8A7CB7541B77501900BFBC28 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		8A7CB7551B77501900BFBC28 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		8A7CB7561B77501900BFBC28 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		8A7CB7591B77512B00BFBC28 /* LCWire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCWire.h; sourceTree = "<group>"; };
+		8A7CB75A1B77512B00BFBC28 /* LCWire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWire.m; sourceTree = "<group>"; };
+		8A7CB75C1B7756DF00BFBC28 /* LCWireTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCWireTests.m; sourceTree = "<group>"; };
+		8A7CB7601B7758AB00BFBC28 /* Expirable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expirable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7CB7571B77501900BFBC28 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7CB7581B77502900BFBC28 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +105,7 @@
 		8A50AA991B33E8F400184D95 = {
 			isa = PBXGroup;
 			children = (
+				8A7CB7491B77501900BFBC28 /* Vendor */,
 				8A50AAA41B33E8F400184D95 /* LCUnitTestsExample */,
 				8A50AABE1B33E8F400184D95 /* LCUnitTestsExampleTests */,
 				8A50AAA31B33E8F400184D95 /* Products */,
@@ -128,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				8A50AAC11B33E8F400184D95 /* LCCalculatorTests.m */,
+				8A7CB75C1B7756DF00BFBC28 /* LCWireTests.m */,
 				8A57D6B11B33EE380003BB06 /* LCRoomTests.m */,
 				8A7B2DFB1B495929000C3FC2 /* LCHouseTests.m */,
 				8A7B2DF51B4952DA000C3FC2 /* DummyUITableViewDataSource.h */,
@@ -155,8 +178,52 @@
 				8A57D6AF1B33EE270003BB06 /* LCRoom.m */,
 				8A7B2DF81B4958CA000C3FC2 /* LCHouse.h */,
 				8A7B2DF91B4958CA000C3FC2 /* LCHouse.m */,
+				8A7CB7601B7758AB00BFBC28 /* Expirable.h */,
+				8A7CB7591B77512B00BFBC28 /* LCWire.h */,
+				8A7CB75A1B77512B00BFBC28 /* LCWire.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		8A7CB7491B77501900BFBC28 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8A7CB74A1B77501900BFBC28 /* OCMock */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		8A7CB74A1B77501900BFBC28 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				8A7CB74B1B77501900BFBC28 /* iOS */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		8A7CB74B1B77501900BFBC28 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8A7CB74C1B77501900BFBC28 /* libOCMock.a */,
+				8A7CB74D1B77501900BFBC28 /* OCMock */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		8A7CB74D1B77501900BFBC28 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				8A7CB74E1B77501900BFBC28 /* NSNotificationCenter+OCMAdditions.h */,
+				8A7CB74F1B77501900BFBC28 /* OCMArg.h */,
+				8A7CB7501B77501900BFBC28 /* OCMConstraint.h */,
+				8A7CB7511B77501900BFBC28 /* OCMLocation.h */,
+				8A7CB7521B77501900BFBC28 /* OCMMacroState.h */,
+				8A7CB7531B77501900BFBC28 /* OCMock.h */,
+				8A7CB7541B77501900BFBC28 /* OCMockObject.h */,
+				8A7CB7551B77501900BFBC28 /* OCMRecorder.h */,
+				8A7CB7561B77501900BFBC28 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A50AAAE1B33E8F400184D95 /* ViewController.m in Sources */,
+				8A7CB75B1B77512B00BFBC28 /* LCWire.m in Sources */,
 				8A7B2DFA1B4958CA000C3FC2 /* LCHouse.m in Sources */,
 				8A50AAAB1B33E8F400184D95 /* AppDelegate.m in Sources */,
 				8A50AACD1B33EA6800184D95 /* LCCalculator.m in Sources */,
@@ -274,10 +342,12 @@
 				8A7B2DFC1B495929000C3FC2 /* LCHouseTests.m in Sources */,
 				8A50AACF1B33EA9D00184D95 /* LCCalculator.m in Sources */,
 				8A57D6B21B33EE380003BB06 /* LCRoomTests.m in Sources */,
+				8A7CB75F1B77573C00BFBC28 /* LCWire.m in Sources */,
 				8A50AAC21B33E8F400184D95 /* LCCalculatorTests.m in Sources */,
 				8A7B2DF41B4942AC000C3FC2 /* LCTableViewTests.m in Sources */,
 				8A57D6B31B33EE450003BB06 /* LCRoom.m in Sources */,
 				8A7B2DF71B4952DA000C3FC2 /* DummyUITableViewDataSource.m in Sources */,
+				8A7CB75D1B7756DF00BFBC28 /* LCWireTests.m in Sources */,
 				8A7B2DFD1B495AB9000C3FC2 /* LCHouse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +470,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LCUnitTestsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/OCMock/iOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -410,6 +484,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LCUnitTestsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/OCMock/iOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -427,6 +505,10 @@
 				);
 				INFOPLIST_FILE = LCUnitTestsExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/OCMock/iOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -440,6 +522,10 @@
 				);
 				INFOPLIST_FILE = LCUnitTestsExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendor/OCMock/iOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

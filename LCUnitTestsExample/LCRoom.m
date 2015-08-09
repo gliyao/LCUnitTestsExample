@@ -8,38 +8,55 @@
 
 #import "LCRoom.h"
 
+
+@interface LCRoom()
+@property (strong, nonatomic) LCWire *wire;
+@end
+
 @implementation LCRoom
 
-- (instancetype)init
+- (instancetype)initWithLight:(BOOL)isLight wire:(LCWire *)wire
 {
     if(self = [super init]){
+        _wire = wire;
+        self.isLight = isLight;
+    }
+    return self;
+}
+
+- (void)setIsLight:(BOOL)isLight
+{
+    // 如果電線過期，燈就不會亮
+    if(self.wire.isExpired){
         _isLight = NO;
+        return;
     }
-    return self;
+    
+    if(_isLight == isLight){
+        return;
+    }
+    
+    _isLight = isLight;
 }
 
-- (instancetype)initWithLight:(BOOL)isLight
-{
-    if(self = [super init]){
-        _isLight = isLight;
-    }
-    return self;
-}
-
+// 開燈
 - (void)turnOnLight
 {
     if(_isLight){
         return;
     }
-    _isLight = YES;
+    
+    self.isLight = YES;
 }
 
+// 關燈
 - (void)turnOffLight
 {
     if(!_isLight){
         return;
     }
-    _isLight = NO;
+    
+    self.isLight = NO;
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "LCRoom.h"
-
+#import "LCWire.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) LCRoom *room;
@@ -19,7 +19,7 @@
 - (void)loadView
 {
     [super loadView];
-    self.room = [[LCRoom alloc] initWithLight:YES];
+    self.room = [[LCRoom alloc] initWithLight:YES wire:[[LCWire alloc] init]];
 }
 
 - (IBAction)turnOn:(id)sender
