@@ -8,7 +8,6 @@
 
 #import "LCWire.h"
 
-static NSTimeInterval const dayInterval = 60*60*24;
 static NSTimeInterval const yearInterval = 60*60*24*30*12;
 
 @interface LCWire ()
@@ -36,6 +35,7 @@ static NSTimeInterval const yearInterval = 60*60*24*30*12;
 
 - (BOOL)isExpired
 {
+    // Mock 現在日期
     return [[NSDate date] timeIntervalSinceReferenceDate] > [self.expiryDate timeIntervalSinceReferenceDate];
 }
 
